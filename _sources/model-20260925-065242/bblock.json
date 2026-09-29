@@ -1,0 +1,24 @@
+{
+  "name": "DCAT-AP-NL 3.0",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-04T18:12:52Z",
+  "itemClass": "model",
+  "version": "0.1",
+  "shaclShapes": [
+    "shapes.shacl"
+  ],
+  "resources": [
+    {
+      "role": "vocabulary",
+      "ref": "vocabulary.ttl",
+      "format": "text/turtle",
+      "title": "Supporting vocabulary"
+    }
+  ],
+  "shaclClosures": [
+    "vocabulary.ttl"
+  ],
+  "seeAlso": [
+    "https://semiceu.github.io/DCAT-AP/releases/3.0.1#"
+  ]
+}

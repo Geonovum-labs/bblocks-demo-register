@@ -1,0 +1,19 @@
+# Examples for this building block. Every snippet here is validated against
+# shapes.shacl when the register is built, so a filled-in example is what turns
+# this block's constraints into evidence — nothing else in the bundle exercises
+# them.
+#
+# This block has no JSON Schema, so its examples are RDF: write Turtle snippets
+# describing an instance the profile documents. Replace the empty list below.
+#
+# examples:
+#   - title: A conforming instance
+#     content: |
+#       What this example shows, in Markdown.
+#     snippets:
+#       - language: turtle
+#         code: |
+#           @prefix ex: <https://example.org/> .
+#           ex:instance a <https://example.org/vocab#DocumentedType> ;
+#               <https://example.org/vocab#documentedProperty> "a value" .
+examples: []

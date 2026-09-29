@@ -1,0 +1,15 @@
+# A test resource for this building block. Every .ttl file in this directory is
+# validated against shapes.shacl when the register is built.
+#
+# As shipped this file asserts nothing: an empty graph has no node for a shape to
+# target, so it passes without testing anything. Replace the commented instance
+# below with data typed by one of the classes this profile documents.
+#
+# @prefix ex: <https://example.org/> .
+#
+# ex:instance a <https://example.org/vocab#DocumentedType> ;
+#     <https://example.org/vocab#documentedProperty> "a value" .
+#
+# Every resource here must conform: a .ttl the shapes reject fails the register
+# build. See the bblocks documentation for declaring a resource that is meant to
+# fail — the -fail filename convention is documented for JSON test resources.

@@ -1,0 +1,33 @@
+@prefix apkg: <http://w3id.org/apkg/terms#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://processes.staging.roofer-online.nl/ogcapi/processes/roofer:convert_format:v1#> .
+
+ex:convert_format a apkg:ApplicationPackage ;
+    dct:identifier "https://processes.staging.roofer-online.nl/ogcapi/processes/roofer:convert_format:v1" ;
+    dct:title "Convert Format" ;
+    dct:description "Convert a model into the formats you need." ;
+    dct:issued "2025-12-17"^^xsd:date ;
+    dct:modified "2025-12-17"^^xsd:date .
+    
+ex:convertFormatProcess a apkg:Process ;
+    dct:type "CommandLineTool" ;
+    apkg:hasInput ex:model_3d_id , ex:formats ;
+    apkg:hasOutput ex:converted_model .
+
+ex:model_3d_id a apkg:Parameter ;
+    dct:identifier "model_3d_id" ;
+    dct:type "integer" ;
+    apkg:label "model_3d_id" .
+
+ex:formats a apkg:Parameter ;
+    dct:identifier "formats" ;
+    dct:type "array" ;
+    apkg:label "formats" .
+
+ex:converted_model a apkg:Parameter ;
+    dct:identifier "converted_model" ;
+    dct:type "object" ;
+    apkg:label "converted_model" .
+

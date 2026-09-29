@@ -1,0 +1,39 @@
+@prefix iso19115: <http://standards.iso.org/iso/19115/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix stac:    <https://stacspec.org/v1.0.0/schema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Mega ontology combining ISO19115, DCAT and STAC concepts
+
+# Classes cross‑walks
+iso19115:MD_Metadata rdfs:subClassOf dcat:Dataset , stac:Collection .
+iso19115:Dataset rdfs:subClassOf dcat:Dataset , stac:Collection .
+
+# Spatial properties
+iso19115:spatialResolution rdfs:subPropertyOf dcat:spatialResolution .
+iso19115:spatialResolution rdfs:subPropertyOf stac:extent .
+
+# Temporal properties
+iso19115:temporalResolution rdfs:subPropertyOf dcat:temporalResolution .
+iso19115:temporalResolution rdfs:subPropertyOf stac:extent .
+
+# Distribution and asset mapping
+iso19115:distributionInformation rdfs:subPropertyOf dcat:distribution .
+iso19115:distributionInformation rdfs:subPropertyOf stac:Asset .
+
+# Resource constraints
+iso19115:resourceConstraints rdfs:subPropertyOf dcat:distribution .
+iso19115:resourceConstraints rdfs:subPropertyOf stac:Asset .
+
+# Geographic description mapping
+iso19115:geographicDescription rdfs:subPropertyOf dcat:spatialResolution .
+iso19115:geographicDescription rdfs:subPropertyOf stac:extent .
+
+# Temporal description mapping
+iso19115:temporalDescription rdfs:subPropertyOf dcat:temporalResolution .
+iso19115:temporalDescription rdfs:subPropertyOf stac:extent .
+
+# Feature collection link
+stac:FeatureCollection rdfs:subClassOf dcat:Distribution .
+
+# Note: The above mappings are illustrative and may need adjustment based on the exact vocabularies used by each standard.

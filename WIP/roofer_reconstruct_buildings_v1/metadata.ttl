@@ -1,0 +1,43 @@
+@prefix apkg: <http://w3id.org/apkg/terms#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://processes.staging.roofer-online.nl/ogcapi/processes/roofer:reconstruct_buildings:v1#> .
+
+ex:reconstruct_buildings a apkg:ApplicationPackage ;
+    dct:identifier "https://processes.staging.roofer-online.nl/ogcapi/processes/roofer:reconstruct_buildings:v1" ;
+    dct:title "Reconstruct Buildings" ;
+    dct:description "Build 3D models from point clouds and building footprints." ;
+    dct:issued "2025-12-17"^^xsd:date ;
+    dct:modified "2025-12-17"^^xsd:date .
+    
+ex:reconstructBuildingsProcess a apkg:Process ;
+    dct:type "CommandLineTool" ;
+    apkg:hasInput ex:point_cloud_ids , ex:bag , ex:name , ex:config ;
+    apkg:hasOutput ex:building_model .
+
+ex:point_cloud_ids a apkg:Parameter ;
+    dct:identifier "point_cloud_ids" ;
+    dct:type "array" ;
+    apkg:label "point_cloud_ids" .
+
+ex:bag a apkg:Parameter ;
+    dct:identifier "bag" ;
+    dct:type "object" ;
+    apkg:label "bag" .
+
+ex:name a apkg:Parameter ;
+    dct:identifier "name" ;
+    dct:type "string" ;
+    apkg:label "name" .
+
+ex:config a apkg:Parameter ;
+    dct:identifier "config" ;
+    dct:type "object" ;
+    apkg:label "config" .
+
+ex:building_model a apkg:Parameter ;
+    dct:identifier "building_model" ;
+    dct:type "object" ;
+    apkg:label "building_model" .
+

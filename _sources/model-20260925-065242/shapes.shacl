@@ -1,0 +1,1642 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+dct:Frequency a rdfs:Class .
+
+dct:LicenseDocument a rdfs:Class .
+
+dct:LinguisticSystem a rdfs:Class .
+
+dct:Location a rdfs:Class .
+
+dct:MediaType a rdfs:Class .
+
+dct:MediaTypeOrExtent a rdfs:Class .
+
+dct:PeriodOfTime a rdfs:Class .
+
+dct:ProvenanceStatement a rdfs:Class .
+
+dct:RightsStatement a rdfs:Class .
+
+dct:Standard a rdfs:Class .
+
+<http://data.europa.eu/eli/ontology#LegalResource> a rdfs:Class .
+
+<http://spdx.org/rdf/terms#Checksum> a rdfs:Class .
+
+<http://spdx.org/rdf/terms#ChecksumAlgorithm> a rdfs:Class .
+
+<http://www.w3.org/2004/02/skos/core#Concept> a rdfs:Class .
+
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> a rdfs:Class .
+
+<http://www.w3.org/2006/time#Instant> a rdfs:Class .
+
+<http://www.w3.org/2006/vcard/ns#Kind> a rdfs:Class .
+
+<http://www.w3.org/ns/adms#Identifier> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#Catalog> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#CatalogRecord> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#DataService> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#Dataset> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#DatasetSeries> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#Distribution> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#Relationship> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#Resource> a rdfs:Class .
+
+<http://www.w3.org/ns/dcat#Role> a rdfs:Class .
+
+<http://www.w3.org/ns/locn#Geometry> a rdfs:Class .
+
+<http://www.w3.org/ns/odrl/2/Policy> a rdfs:Class .
+
+<http://www.w3.org/ns/prov#Activity> a rdfs:Class .
+
+<http://www.w3.org/ns/prov#Attribution> a rdfs:Class .
+
+<http://xmlns.com/foaf/0.1/Agent> a rdfs:Class .
+
+<http://xmlns.com/foaf/0.1/Document> a rdfs:Class .
+
+rdfs:Literal a rdfs:Class .
+
+rdfs:Resource a rdfs:Class .
+
+dct:accessRights a rdf:Property .
+
+dct:accrualPeriodicity a rdf:Property .
+
+dct:conformsTo a rdf:Property .
+
+dct:creator a rdf:Property .
+
+dct:description a rdf:Property .
+
+dct:format a rdf:Property .
+
+dct:hasPart a rdf:Property .
+
+dct:identifier a rdf:Property .
+
+dct:isReferencedBy a rdf:Property .
+
+dct:issued a rdf:Property .
+
+dct:language a rdf:Property .
+
+dct:license a rdf:Property .
+
+dct:modified a rdf:Property .
+
+dct:provenance a rdf:Property .
+
+dct:publisher a rdf:Property .
+
+dct:relation a rdf:Property .
+
+dct:rights a rdf:Property .
+
+dct:source a rdf:Property .
+
+dct:spatial a rdf:Property .
+
+dct:temporal a rdf:Property .
+
+dct:title a rdf:Property .
+
+dct:type a rdf:Property .
+
+<http://data.europa.eu/r5r/applicableLegislation> a rdf:Property .
+
+<http://data.europa.eu/r5r/availability> a rdf:Property .
+
+<http://data.europa.eu/r5r/hvdCategory> a rdf:Property .
+
+<http://spdx.org/rdf/terms#algorithm> a rdf:Property .
+
+<http://spdx.org/rdf/terms#checksum> a rdf:Property .
+
+<http://spdx.org/rdf/terms#checksumValue> a rdf:Property .
+
+<http://www.w3.org/2004/02/skos/core#notation> a rdf:Property .
+
+<http://www.w3.org/2006/time#hasBeginning> a rdf:Property .
+
+<http://www.w3.org/2006/time#hasEnd> a rdf:Property .
+
+<http://www.w3.org/ns/adms#identifier> a rdf:Property .
+
+<http://www.w3.org/ns/adms#sample> a rdf:Property .
+
+<http://www.w3.org/ns/adms#status> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#accessService> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#accessURL> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#bbox> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#byteSize> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#catalog> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#centroid> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#compressFormat> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#contactPoint> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#dataset> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#distribution> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#downloadURL> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#endDate> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#endpointDescription> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#endpointURL> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#hadRole> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#hasVersion> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#inSeries> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#keyword> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#landingPage> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#mediaType> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#packageFormat> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#qualifiedRelation> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#record> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#servesDataset> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#service> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#spatialResolutionInMeters> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#startDate> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#temporalResolution> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#theme> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#themeTaxonomy> a rdf:Property .
+
+<http://www.w3.org/ns/dcat#version> a rdf:Property .
+
+<http://www.w3.org/ns/locn#geometry> a rdf:Property .
+
+<http://www.w3.org/ns/odrl/2/hasPolicy> a rdf:Property .
+
+<http://www.w3.org/ns/prov#qualifiedAttribution> a rdf:Property .
+
+<http://www.w3.org/ns/prov#wasGeneratedBy> a rdf:Property .
+
+<http://xmlns.com/foaf/0.1/homepage> a rdf:Property .
+
+<http://xmlns.com/foaf/0.1/page> a rdf:Property .
+
+<http://xmlns.com/foaf/0.1/primaryTopic> a rdf:Property .
+
+xsd:date a rdfs:Datatype .
+
+xsd:dateTime a rdfs:Datatype .
+
+xsd:decimal a rdfs:Datatype .
+
+xsd:duration a rdfs:Datatype .
+
+xsd:gYear a rdfs:Datatype .
+
+xsd:gYearMonth a rdfs:Datatype .
+
+xsd:hexBinary a rdfs:Datatype .
+
+xsd:nonNegativeInteger a rdfs:Datatype .
+
+[
+  a sh:NodeShape ;
+  sh:name "ProvenanceStatement" ;
+  sh:targetClass dct:ProvenanceStatement ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "LegalResource" ;
+  sh:targetClass <http://data.europa.eu/eli/ontology#LegalResource> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "TimeInstant" ;
+  sh:targetClass <http://www.w3.org/2006/time#Instant> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "LicenseDocument" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "A type of licence, e.g. indicating 'public domain' or 'royalties required'."@en ;
+    sh:name "type"@en ;
+    sh:path dct:type ;
+  ] ;
+  sh:targetClass dct:LicenseDocument ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "ChecksumAlgorithm" ;
+  sh:targetClass <http://spdx.org/rdf/terms#ChecksumAlgorithm> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Relationship" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A resource related to the source resource."@en ;
+    sh:minCount 1 ;
+    sh:name "relation"@en ;
+    sh:path dct:relation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Role> ;
+    sh:description "A function of an entity or agent with respect to another entity or resource."@en ;
+    sh:minCount 1 ;
+    sh:name "had role"@en ;
+    sh:path <http://www.w3.org/ns/dcat#hadRole> ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/dcat#Relationship> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Policy" ;
+  sh:targetClass <http://www.w3.org/ns/odrl/2/Policy> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Agent" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "The nature of the agent."@en ;
+    sh:maxCount 1 ;
+    sh:name "type"@en ;
+    sh:path dct:type ;
+  ] ;
+  sh:targetClass <http://xmlns.com/foaf/0.1/Agent> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Resource" ;
+  sh:targetClass <http://www.w3.org/ns/dcat#Resource> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Role" ;
+  sh:targetClass <http://www.w3.org/ns/dcat#Role> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Geometry" ;
+  sh:targetClass <http://www.w3.org/ns/locn#Geometry> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Data Service"@en ;
+  sh:name "Data Service"@nl ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "creator"@en ;
+    sh:name "vervaardiger"@nl ;
+    sh:path dct:creator ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LinguisticSystem ;
+    sh:minCount 1 ;
+    sh:name "language"@en ;
+    sh:name "taal"@nl ;
+    sh:path dct:language ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class rdfs:Resource ;
+    sh:description "The root location or primary endpoint of the service (an IRI)."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "endpoint URL"@en ;
+    sh:name "endpoint-URL"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#endpointURL> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:RightsStatement ;
+    sh:description "A statement that specifies rights associated with the Data Service."@en ;
+    sh:name "rechten"@nl ;
+    sh:name "rights"@en ;
+    sh:path dct:rights ;
+    sh:severity sh:Info ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:MediaTypeOrExtent ;
+    sh:description "The structure that can be returned by querying the endpointURL."@en ;
+    sh:name "formaat"@nl ;
+    sh:name "format"@en ;
+    sh:path dct:format ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+    sh:description "An entity (organisation) responsible for making the Data Service available."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "publisher"@en ;
+    sh:name "uitgever"@nl ;
+    sh:path dct:publisher ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Dataset> ;
+    sh:description "This property refers to a collection of data that this data service can distribute."@en ;
+    sh:name "bedient dataset"@nl ;
+    sh:name "serves dataset"@en ;
+    sh:path <http://www.w3.org/ns/dcat#servesDataset> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "The HVD category to which this Data Service belongs."@en ;
+    sh:name "HVD Category"@en ;
+    sh:name "HVD-categorie"@nl ;
+    sh:path <http://data.europa.eu/r5r/hvdCategory> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind> ;
+    sh:description "Contact information that can be used for sending comments about the Data Service."@en ;
+    sh:minCount 1 ;
+    sh:name "contact point"@en ;
+    sh:name "contactpunt"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint> ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:name "gewijzigd"@nl ;
+    sh:name "modification date"@en ;
+    sh:path dct:modified ;
+    sh:severity sh:Info ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A name given to the Data Service."@en ;
+    sh:minCount 1 ;
+    sh:name "titel"@nl ;
+    sh:name "title"@en ;
+    sh:path dct:title ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Document> ;
+    sh:description "A page or document about this Data Service"@en ;
+    sh:name "documentatie"@nl ;
+    sh:name "documentation"@en ;
+    sh:path <http://xmlns.com/foaf/0.1/page> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Document> ;
+    sh:description "A web page that provides access to the Data Service and/or additional information."@en ;
+    sh:name "landing page"@en ;
+    sh:name "landingspagina"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#landingPage> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
+    sh:description "The legislation that mandates the creation or management of the Data Service."@en ;
+    sh:name "applicable legislation"@en ;
+    sh:name "toepasbare wetgeving"@nl ;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class rdfs:Resource ;
+    sh:description "A description of the services available via the end-points, including their operations, parameters etc."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "endpoint description"@en ;
+    sh:name "endpointbeschrijving"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#endpointDescription> ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Standard ;
+    sh:description "An established (technical) standard to which the Data Service conforms."@en ;
+    sh:name "conforms to"@en ;
+    sh:name "voldoet aan"@nl ;
+    sh:path dct:conformsTo ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LicenseDocument ;
+    sh:description "A licence under which the Data service is made available."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "licence"@en ;
+    sh:name "licentie"@nl ;
+    sh:path dct:license ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/adms#Identifier> ;
+    sh:name "other identifier"@en ;
+    sh:name "overige identificator"@nl ;
+    sh:path <http://www.w3.org/ns/adms#identifier> ;
+    sh:severity sh:Info ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "A category of the Data Service."@en ;
+    sh:minCount 1 ;
+    sh:name "thema"@nl ;
+    sh:name "theme"@en ;
+    sh:path <http://www.w3.org/ns/dcat#theme> ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A keyword or tag describing the Data Service."@en ;
+    sh:minCount 1 ;
+    sh:name "keyword"@en ;
+    sh:name "trefwoord"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#keyword> ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "identificator"@nl ;
+    sh:name "identifier"@en ;
+    sh:path dct:identifier ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:RightsStatement ;
+    sh:description "Information regarding access or restrictions based on privacy, security, or other policies."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "access rights"@en ;
+    sh:name "toegangsrechten"@nl ;
+    sh:path dct:accessRights ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A free-text account of the Data Service."@en ;
+    sh:minCount 1 ;
+    sh:name "beschrijving"@nl ;
+    sh:name "description"@en ;
+    sh:path dct:description ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/dcat#DataService> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "LinguisticSystem" ;
+  sh:targetClass dct:LinguisticSystem ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Distributie"@nl ;
+  sh:name "Distribution"@en ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:MediaType ;
+    sh:description "The media type of the Distribution as defined in the official register of media types managed by IANA."@en ;
+    sh:maxCount 1 ;
+    sh:name "media type"@en ;
+    sh:name "mediatype"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#mediaType> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
+    sh:description "The legislation that mandates the creation or management of the Distribution."@en ;
+    sh:name "applicable legislation"@en ;
+    sh:name "toepasbare wetgeving"@nl ;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LinguisticSystem ;
+    sh:description "A language used in the Distribution."@en ;
+    sh:minCount 1 ;
+    sh:name "language"@en ;
+    sh:name "taal"@nl ;
+    sh:path dct:language ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The minimum spatial separation resolvable in a dataset distribution, measured in meters."@en ;
+    sh:maxCount 1 ;
+    sh:name "ruimtelijke resolutie in meters"@nl ;
+    sh:name "spatial resolution"@en ;
+    sh:path <http://www.w3.org/ns/dcat#spatialResolutionInMeters> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A name given to the Distribution."@en ;
+    sh:name "titel"@nl ;
+    sh:name "title"@en ;
+    sh:path dct:title ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/odrl/2/Policy> ;
+    sh:description "The policy expressing the rights associated with the distribution if using the [[ODRL]] vocabulary."@en ;
+    sh:maxCount 1 ;
+    sh:name "has policy"@en ;
+    sh:name "heeft beleid"@nl ;
+    sh:path <http://www.w3.org/ns/odrl/2/hasPolicy> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "An indication how long it is planned to keep the Distribution of the Dataset available."@en ;
+    sh:maxCount 1 ;
+    sh:name "availability"@en ;
+    sh:name "beschikbaarheid"@nl ;
+    sh:path <http://data.europa.eu/r5r/availability> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:MediaType ;
+    sh:description "The format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file."@en ;
+    sh:maxCount 1 ;
+    sh:name "compressieformaat"@nl ;
+    sh:name "compression format"@en ;
+    sh:path <http://www.w3.org/ns/dcat#compressFormat> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:RightsStatement ;
+    sh:description "A statement that specifies rights associated with the Distribution."@en ;
+    sh:name "rechten"@nl ;
+    sh:name "rights"@en ;
+    sh:path dct:rights ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:MediaType ;
+    sh:description "The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together."@en ;
+    sh:maxCount 1 ;
+    sh:name "packaging format"@en ;
+    sh:name "pakketformaat"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#packageFormat> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LicenseDocument ;
+    sh:description "A licence under which the Distribution is made available."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "licence"@en ;
+    sh:name "licentie"@nl ;
+    sh:path dct:license ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:datatype xsd:nonNegativeInteger ;
+    sh:description "The size of a Distribution in bytes."@en ;
+    sh:maxCount 1 ;
+    sh:name "byte size"@en ;
+    sh:name "bytesize"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#byteSize> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A URL that gives access to a Distribution of the Dataset."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "access URL"@en ;
+    sh:name "toegangs-URL"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#accessURL> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The most recent date on which the Distribution was changed or modified."@en ;
+    sh:maxCount 1 ;
+    sh:name "gewijzigd"@nl ;
+    sh:name "modified"@en ;
+    sh:path dct:modified ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A free-text account of the Distribution."@en ;
+    sh:name "beschrijving"@nl ;
+    sh:name "description"@en ;
+    sh:path dct:description ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:datatype xsd:duration ;
+    sh:description "The minimum time period resolvable in the dataset distribution."@en ;
+    sh:maxCount 1 ;
+    sh:name "temporal resolution"@en ;
+    sh:name "tijdresolutie"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#temporalResolution> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:MediaTypeOrExtent ;
+    sh:description "The file format of the Distribution."@en ;
+    sh:maxCount 1 ;
+    sh:name "formaat"@nl ;
+    sh:name "format"@en ;
+    sh:path dct:format ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Document> ;
+    sh:description "A page or document about this Distribution."@en ;
+    sh:name "documentatie"@nl ;
+    sh:name "documentation"@en ;
+    sh:path <http://xmlns.com/foaf/0.1/page> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#DataService> ;
+    sh:description "A data service that gives access to the distribution of the dataset."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "access service"@en ;
+    sh:name "toegangsservice"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#accessService> ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://spdx.org/rdf/terms#Checksum> ;
+    sh:description "A mechanism that can be used to verify that the contents of a distribution have not changed."@en ;
+    sh:maxCount 1 ;
+    sh:name "checksum"@en ;
+    sh:name "controlesom"@nl ;
+    sh:path <http://spdx.org/rdf/terms#checksum> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The date of formal issuance (e.g., publication) of the Distribution."@en ;
+    sh:maxCount 1 ;
+    sh:name "issued"@en ;
+    sh:name "uitgegeven"@nl ;
+    sh:path dct:issued ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A URL that is a direct link to a downloadable file in a given format."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "download URL"@en ;
+    sh:name "download-URL"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#downloadURL> ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "The status of the distribution in the context of maturity lifecycle."@en ;
+    sh:maxCount 1 ;
+    sh:name "status"@en ;
+    sh:name "status"@nl ;
+    sh:path <http://www.w3.org/ns/adms#status> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Standard ;
+    sh:description "An established schema to which the described Distribution conforms."@en ;
+    sh:minCount 1 ;
+    sh:name "conforms to"@en ;
+    sh:name "voldoet aan"@nl ;
+    sh:path dct:conformsTo ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/dcat#Distribution> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Catalog Record"@en ;
+  sh:name "Catalogus Record"@nl ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LinguisticSystem ;
+    sh:description "A language used in the textual metadata describing titles, descriptions, etc. of the Catalogued Resource."@en ;
+    sh:minCount 1 ;
+    sh:name "language"@en ;
+    sh:name "taal"@nl ;
+    sh:path dct:language ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The most recent date on which the Catalogue entry was changed or modified."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "gewijzigd"@nl ;
+    sh:name "modified"@en ;
+    sh:path dct:modified ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "The status of the catalogue record in the context of editorial flow of the dataset and data service descriptions."@en ;
+    sh:maxCount 1 ;
+    sh:name "levenscyclus status"@nl ;
+    sh:name "lifecycle status"@en ;
+    sh:path <http://www.w3.org/ns/adms#status> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The date on which the description of the Resource was included in the Catalogue."@en ;
+    sh:maxCount 1 ;
+    sh:name "issued"@en ;
+    sh:name "uitgegeven"@nl ;
+    sh:path dct:issued ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A free-text account of the record. This property can be repeated for parallel language versions of the description."@en ;
+    sh:name "beschrijving"@nl ;
+    sh:name "description"@en ;
+    sh:path dct:description ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Standard ;
+    sh:description "An Application Profile that the Catalogued Resource&#39;s metadata conforms to."@en ;
+    sh:name "applicatieprofiel"@nl ;
+    sh:name "application profile"@en ;
+    sh:path dct:conformsTo ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A name given to the Catalogue Record."@en ;
+    sh:name "titel"@nl ;
+    sh:name "title"@en ;
+    sh:path dct:title ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Resource> ;
+    sh:description "A link to the Dataset, Data service or Catalog described in the record."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "hoofdonderwerp"@nl ;
+    sh:name "primary topic"@en ;
+    sh:path <http://xmlns.com/foaf/0.1/primaryTopic> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#CatalogRecord> ;
+    sh:description "The original metadata that was used in creating metadata for the Dataset, Data Service or Dataset Series."@en ;
+    sh:maxCount 1 ;
+    sh:name "bron"@nl ;
+    sh:name "source"@en ;
+    sh:path dct:source ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/dcat#CatalogRecord> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Concept" ;
+  sh:targetClass <http://www.w3.org/2004/02/skos/core#Concept> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "MediaType" ;
+  sh:targetClass dct:MediaType ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Dataset"@en ;
+  sh:name "Dataset"@nl ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The most recent date on which the Dataset was changed or modified."@en ;
+    sh:maxCount 1 ;
+    sh:name "gewijzigd"@nl ;
+    sh:name "modified"@en ;
+    sh:path dct:modified ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
+    sh:description "The legislation that mandates the creation or management of the Dataset."@en ;
+    sh:name "applicable legislation"@en ;
+    sh:name "toepasbare wetgeving"@nl ;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Document> ;
+    sh:description "A page or document about this Dataset."@en ;
+    sh:minCount 1 ;
+    sh:name "documentatie"@nl ;
+    sh:name "documentation"@en ;
+    sh:path <http://xmlns.com/foaf/0.1/page> ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/adms#Identifier> ;
+    sh:description "A secondary identifier of the Dataset"@en ;
+    sh:name "Andere identificator"@nl ;
+    sh:name "Other identifier"@en ;
+    sh:path <http://www.w3.org/ns/adms#identifier> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:ProvenanceStatement ;
+    sh:description "A statement about the lineage of a Dataset."@en ;
+    sh:name "herkomst"@nl ;
+    sh:name "provenance"@en ;
+    sh:path dct:provenance ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Distribution> ;
+    sh:description "A sample distribution of the dataset."@en ;
+    sh:name "sample"@en ;
+    sh:name "voorbeeld"@nl ;
+    sh:path <http://www.w3.org/ns/adms#sample> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The date of formal issuance (e.g., publication) of the Dataset."@en ;
+    sh:maxCount 1 ;
+    sh:name "issued"@en ;
+    sh:name "uitgegeven"@nl ;
+    sh:path dct:issued ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Dataset> ;
+    sh:description "A related Dataset that is a version, edition, or adaptation of the described Dataset."@en ;
+    sh:name "has version"@en ;
+    sh:name "heeft versie"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#hasVersion> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "A category of the Dataset."@en ;
+    sh:minCount 1 ;
+    sh:name "thema"@nl ;
+    sh:name "theme"@en ;
+    sh:path <http://www.w3.org/ns/dcat#theme> ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Document> ;
+    sh:description "A web page that provides access to the Dataset, its Distributions and/or additional information."@en ;
+    sh:minCount 1 ;
+    sh:name "landing page"@en ;
+    sh:name "landingspagina"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#landingPage> ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#DatasetSeries> ;
+    sh:description "A dataset series of which the dataset is part."@en ;
+    sh:name "in serie"@nl ;
+    sh:name "in series"@en ;
+    sh:path <http://www.w3.org/ns/dcat#inSeries> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+    sh:description "An entity (organisation) responsible for making the Dataset available."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "publisher"@en ;
+    sh:name "uitgever"@nl ;
+    sh:path dct:publisher ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A keyword or tag describing the Dataset."@en ;
+    sh:name "keyword"@en ;
+    sh:name "trefwoord"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#keyword> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A free-text account of the Dataset."@en ;
+    sh:minCount 1 ;
+    sh:name "beschrijving"@nl ;
+    sh:name "description"@en ;
+    sh:path dct:description ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "identificator"@nl ;
+    sh:name "identifier"@en ;
+    sh:path dct:identifier ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:PeriodOfTime ;
+    sh:description "A temporal period that the Dataset covers."@en ;
+    sh:name "temporal"@en ;
+    sh:name "tijddekking"@nl ;
+    sh:path dct:temporal ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/prov#Attribution> ;
+    sh:description "An Agent having some form of responsibility for the resource."@en ;
+    sh:name "gekwalificeerde toeschrijving"@nl ;
+    sh:name "qualified attribution"@en ;
+    sh:path <http://www.w3.org/ns/prov#qualifiedAttribution> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "The HVD category to which this Dataset belongs."@en ;
+    sh:name "HVD Category"@en ;
+    sh:name "HVD-categorie"@nl ;
+    sh:path <http://data.europa.eu/r5r/hvdCategory> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A name given to the Dataset."@en ;
+    sh:minCount 1 ;
+    sh:name "titel"@nl ;
+    sh:name "title"@en ;
+    sh:path dct:title ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:datatype xsd:duration ;
+    sh:description "The minimum time period resolvable in the dataset."@en ;
+    sh:maxCount 1 ;
+    sh:name "temporal resolution"@en ;
+    sh:name "tijdresolutie"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#temporalResolution> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Frequency ;
+    sh:description "The frequency at which the Dataset is updated."@en ;
+    sh:maxCount 1 ;
+    sh:name "accrual periodicity"@en ;
+    sh:name "verversingsinterval"@nl ;
+    sh:path dct:accrualPeriodicity ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind> ;
+    sh:description "Contact information that can be used for sending comments about the Dataset."@en ;
+    sh:minCount 1 ;
+    sh:name "contact point"@en ;
+    sh:name "contactpunt"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint> ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+    sh:description "An entity responsible for producing the dataset."@en ;
+    sh:minCount 1 ;
+    sh:name "creator"@en ;
+    sh:name "vervaardiger"@nl ;
+    sh:path dct:creator ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Distribution> ;
+    sh:description "An available Distribution for the Dataset."@en ;
+    sh:name "distributie"@nl ;
+    sh:name "distribution"@en ;
+    sh:path <http://www.w3.org/ns/dcat#distribution> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "A type of the Dataset."@en ;
+    sh:name "type"@en ;
+    sh:name "type"@nl ;
+    sh:path dct:type ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:RightsStatement ;
+    sh:description "Information that indicates whether the Dataset is publicly accessible, has access restrictions or is not public."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "access rights"@en ;
+    sh:name "toegangsrechten"@nl ;
+    sh:path dct:accessRights ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Standard ;
+    sh:description "An implementing rule or other specification."@en ;
+    sh:minCount 1 ;
+    sh:name "conforms to"@en ;
+    sh:name "voldoet aan"@nl ;
+    sh:path dct:conformsTo ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A related resource, such as a publication, that references, cites, or otherwise points to the dataset."@en ;
+    sh:name "is referenced by"@en ;
+    sh:name "wordt gerefereerd door"@nl ;
+    sh:path dct:isReferencedBy ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The minimum spatial separation resolvable in a dataset, measured in meters."@en ;
+    sh:name "ruimtelijke resolutie in meters"@nl ;
+    sh:name "spatial resolution in meters"@en ;
+    sh:path <http://www.w3.org/ns/dcat#spatialResolutionInMeters> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Dataset> ;
+    sh:description "A related Dataset from which the described Dataset is derived."@en ;
+    sh:name "bron"@nl ;
+    sh:name "source"@en ;
+    sh:path dct:source ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/prov#Activity> ;
+    sh:description "An activity that generated, or provides the business context for, the creation of the dataset."@en ;
+    sh:name "was generated by"@en ;
+    sh:name "werd gegenereerd door"@nl ;
+    sh:path <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+    sh:description "The status of the dataset in the context of editorial flow of the dataset and data service descriptions."@en ;
+    sh:maxCount 1 ;
+    sh:name "status"@en ;
+    sh:name "status"@nl ;
+    sh:path <http://www.w3.org/ns/adms#status> ;
+    sh:severity sh:Info ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Relationship> ;
+    sh:description "A description of a relationship with another resource."@en ;
+    sh:name "gekwalificeerde relatie"@nl ;
+    sh:name "qualified relation"@en ;
+    sh:path <http://www.w3.org/ns/dcat#qualifiedRelation> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Location ;
+    sh:description "A geographic region that is covered by the Dataset."@en ;
+    sh:name "ruimtelijke dekking"@nl ;
+    sh:name "spatial"@en ;
+    sh:path dct:spatial ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A related resource."@en ;
+    sh:name "relatie"@nl ;
+    sh:name "relation"@en ;
+    sh:path dct:relation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LinguisticSystem ;
+    sh:description "A language of the Dataset."@en ;
+    sh:minCount 1 ;
+    sh:name "language"@en ;
+    sh:name "taal"@nl ;
+    sh:path dct:language ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The version indicator (name or identifier) of a resource."@en ;
+    sh:maxCount 1 ;
+    sh:name "versie"@nl ;
+    sh:name "version"@en ;
+    sh:path <http://www.w3.org/ns/dcat#version> ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/dcat#Dataset> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "RightsStatement" ;
+  sh:targetClass dct:RightsStatement ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "MediaTypeOrExtent" ;
+  sh:targetClass dct:MediaTypeOrExtent ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Document" ;
+  sh:targetClass <http://xmlns.com/foaf/0.1/Document> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Checksum" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:datatype xsd:hexBinary ;
+    sh:description "A lower case hexadecimal encoded digest value produced using a specific algorithm."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "checksum value"@en ;
+    sh:path <http://spdx.org/rdf/terms#checksumValue> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://spdx.org/rdf/terms#ChecksumAlgorithm> ;
+    sh:description "The algorithm used to produce the subject Checksum."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "algorithm"@en ;
+    sh:path <http://spdx.org/rdf/terms#algorithm> ;
+  ] ;
+  sh:targetClass <http://spdx.org/rdf/terms#Checksum> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Temporal Literal"@en ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Dataset Serie"@nl ;
+  sh:name "Dataset Series"@en ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The most recent date on which the Dataset Series was changed or modified."@en ;
+    sh:maxCount 1 ;
+    sh:name "gewijzigd"@nl ;
+    sh:name "modified"@en ;
+    sh:path dct:modified ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind> ;
+    sh:description "Contact information that can be used for sending comments about the Dataset Series."@en ;
+    sh:name "contact point"@en ;
+    sh:name "contactpunt"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
+    sh:description "The legislation that mandates the creation or management of the Dataset Series."@en ;
+    sh:name "applicable legislation"@en ;
+    sh:name "toepasbare wetgeving"@nl ;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Frequency ;
+    sh:description "The frequency at which the Dataset Series is updated."@en ;
+    sh:maxCount 1 ;
+    sh:name "accrual periodicity"@en ;
+    sh:name "frequentie van opname"@nl ;
+    sh:path dct:accrualPeriodicity ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+    sh:description "An entity (organisation) responsible for ensuring the coherency of the Dataset Series "@en ;
+    sh:maxCount 1 ;
+    sh:name "publisher"@en ;
+    sh:name "uitgever"@nl ;
+    sh:path dct:publisher ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A name given to the Dataset Series."@en ;
+    sh:minCount 1 ;
+    sh:name "titel"@nl ;
+    sh:name "title"@en ;
+    sh:path dct:title ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The date of formal issuance (e.g., publication) of the Dataset Series."@en ;
+    sh:maxCount 1 ;
+    sh:name "issued"@en ;
+    sh:name "uitgegeven"@nl ;
+    sh:path dct:issued ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:PeriodOfTime ;
+    sh:description "A temporal period that the Dataset Series covers."@en ;
+    sh:name "temporal"@en ;
+    sh:name "tijddekking"@nl ;
+    sh:path dct:temporal ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Location ;
+    sh:description "A geographic region that is covered by the Dataset Series."@en ;
+    sh:name "ruimtelijke dekking"@nl ;
+    sh:name "spatial"@en ;
+    sh:path dct:spatial ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A free-text account of the Dataset Series."@en ;
+    sh:minCount 1 ;
+    sh:name "beschrijving"@nl ;
+    sh:name "description"@en ;
+    sh:path dct:description ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/dcat#DatasetSeries> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Attribution" ;
+  sh:targetClass <http://www.w3.org/ns/prov#Attribution> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Identifier" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A string that is an identifier in the context of the identifier scheme referenced by its datatype."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "notation"@en ;
+    sh:path <http://www.w3.org/2004/02/skos/core#notation> ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/adms#Identifier> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Activity" ;
+  sh:targetClass <http://www.w3.org/ns/prov#Activity> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Standard" ;
+  sh:targetClass dct:Standard ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Kind" ;
+  sh:targetClass <http://www.w3.org/2006/vcard/ns#Kind> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "TemporalLiteral" ;
+  sh:targetClass rdfs:Literal ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Catalog"@en ;
+  sh:name "Catalogus"@nl ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    sh:description "A knowledge organization system used to classify the Resources that are in the Catalogue."@en ;
+    sh:name "thema taxonomie"@nl ;
+    sh:name "theme taxonomy"@en ;
+    sh:path <http://www.w3.org/ns/dcat#themeTaxonomy> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+    sh:description "An entity responsible for the creation of the catalogue."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "creator"@en ;
+    sh:name "vervaardiger"@nl ;
+    sh:path dct:creator ;
+    sh:severity sh:Warning ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
+    sh:description "The legislation that mandates the creation or management of the Catalogue."@en ;
+    sh:name "applicable legislation"@en ;
+    sh:name "toepasbare wetgeving"@nl ;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A name given to the Catalogue."@en ;
+    sh:minCount 1 ;
+    sh:name "titel"@nl ;
+    sh:name "title"@en ;
+    sh:path dct:title ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:PeriodOfTime ;
+    sh:description "A temporal period that the Catalogue covers."@en ;
+    sh:name "temporal"@en ;
+    sh:name "tijddekking"@nl ;
+    sh:path dct:temporal ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#CatalogRecord> ;
+    sh:description "A Catalogue Record that is part of the Catalogue."@en ;
+    sh:name "record"@en ;
+    sh:name "record"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#record> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Catalog> ;
+    sh:description "A catalogue whose contents are of interest in the context of this catalogue."@en ;
+    sh:name "catalog"@en ;
+    sh:name "catalogus"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#catalog> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A free-text account of the Catalogue."@en ;
+    sh:minCount 1 ;
+    sh:name "beschrijving"@nl ;
+    sh:name "description"@en ;
+    sh:path dct:description ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:Location ;
+    sh:description "A geographical area covered by the Catalogue."@en ;
+    sh:name "ruimtelijke dekking"@nl ;
+    sh:name "spatial"@en ;
+    sh:path dct:spatial ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Document> ;
+    sh:description "A web page that acts as the main page for the Catalogue."@en ;
+    sh:maxCount 1 ;
+    sh:name "homepage"@en ;
+    sh:name "homepage"@nl ;
+    sh:path <http://xmlns.com/foaf/0.1/homepage> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Dataset> ;
+    sh:description "A Dataset that is part of the Catalogue."@en ;
+    sh:minCount 1 ;
+    sh:name "dataset"@en ;
+    sh:name "dataset"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#dataset> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The most recent date on which the Catalogue was modified."@en ;
+    sh:maxCount 1 ;
+    sh:name "gewijzigd"@nl ;
+    sh:name "modified"@en ;
+    sh:path dct:modified ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#Catalog> ;
+    sh:description "A related Catalogue that is part of the described Catalogue."@en ;
+    sh:name "has part"@en ;
+    sh:name "heeft deel"@nl ;
+    sh:path dct:hasPart ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LicenseDocument ;
+    sh:description "A licence under which the Catalogue can be used or reused."@en ;
+    sh:maxCount 1 ;
+    sh:name "license"@en ;
+    sh:name "licentie"@nl ;
+    sh:path dct:license ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:RightsStatement ;
+    sh:description "A statement that specifies rights associated with the Catalogue."@en ;
+    sh:name "rechten"@nl ;
+    sh:name "rights"@en ;
+    sh:path dct:rights ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The date of formal issuance (e.g., publication) of the Catalogue."@en ;
+    sh:maxCount 1 ;
+    sh:name "issued"@en ;
+    sh:name "uitgegeven"@nl ;
+    sh:path dct:issued ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class dct:LinguisticSystem ;
+    sh:description "A language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue."@en ;
+    sh:name "language"@en ;
+    sh:name "taal"@nl ;
+    sh:path dct:language ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/dcat#DataService> ;
+    sh:description "A site or end-point (Data Service) that is listed in the Catalogue."@en ;
+    sh:name "service"@en ;
+    sh:name "service"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#service> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind> ;
+    sh:description "Contact information that can be used for sending comments about the Catalogue."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "contact point"@en ;
+    sh:name "contactpunt"@nl ;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint> ;
+    sh:severity sh:Violation ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+    sh:description "An entity (organisation) responsible for making the Catalogue available."@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:name "publisher"@en ;
+    sh:name "uitgever"@nl ;
+    sh:path dct:publisher ;
+  ] ;
+  sh:targetClass <http://www.w3.org/ns/dcat#Catalog> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Frequency" ;
+  sh:targetClass dct:Frequency ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "PeriodOfTime" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2006/time#Instant> ;
+    sh:description "The end of a period or interval."@en ;
+    sh:maxCount 1 ;
+    sh:name "end"@en ;
+    sh:path <http://www.w3.org/2006/time#hasEnd> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The end of the period."@en ;
+    sh:maxCount 1 ;
+    sh:name "end date"@en ;
+    sh:path <http://www.w3.org/ns/dcat#endDate> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/2006/time#Instant> ;
+    sh:description "The beginning of a period or interval."@en ;
+    sh:maxCount 1 ;
+    sh:name "beginning"@en ;
+    sh:path <http://www.w3.org/2006/time#hasBeginning> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The start of the period."@en ;
+    sh:maxCount 1 ;
+    sh:name "start date"@en ;
+    sh:path <http://www.w3.org/ns/dcat#startDate> ;
+  ] ;
+  sh:targetClass dct:PeriodOfTime ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "ConceptScheme" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "A name of the concept scheme."@en ;
+    sh:minCount 1 ;
+    sh:name "title"@en ;
+    sh:path dct:title ;
+  ] ;
+  sh:targetClass <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+] .
+
+[
+  a sh:NodeShape ;
+  sh:name "Location" ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The geographic center (centroid) of a resource."@en ;
+    sh:maxCount 1 ;
+    sh:name "centroid"@en ;
+    sh:path <http://www.w3.org/ns/dcat#centroid> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:class <http://www.w3.org/ns/locn#Geometry> ;
+    sh:description "The corresponding geometry for a resource."@en ;
+    sh:maxCount 1 ;
+    sh:name "geometry"@en ;
+    sh:path <http://www.w3.org/ns/locn#geometry> ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:description "The geographic bounding box of a resource."@en ;
+    sh:maxCount 1 ;
+    sh:name "bbox"@en ;
+    sh:path <http://www.w3.org/ns/dcat#bbox> ;
+  ] ;
+  sh:targetClass dct:Location ;
+] .
+
+

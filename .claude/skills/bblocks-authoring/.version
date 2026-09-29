@@ -1,0 +1,8 @@
+{
+  "name": "bblocks-authoring",
+  "commit": "a4124902f18157bf210b5b27f5d49aabdc5d5c10",
+  "date": "2026-08-05T11:14:31+02:00",
+  "zip_url": "https://ogcincubator.github.io/ogc-llm-skills/bblocks-authoring.zip",
+  "manifest_url": "https://ogcincubator.github.io/ogc-llm-skills/manifest.json",
+  "llms_txt": "https://ogcincubator.github.io/ogc-llm-skills/llms.txt"
+}

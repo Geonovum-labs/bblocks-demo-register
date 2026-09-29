@@ -1,0 +1,5 @@
+examples:
+  - title: Metadata beschrijving van het LOF Process
+    snippets:
+      - language: ttl
+        ref: examples/metadata.ttl
