@@ -14,6 +14,18 @@ register for various examples of building blocks.
 
 Dit blok definieert de eigenschappen van een BAG-object.
 
+### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id` — Logboek Extensie Lezen Processing Activity ID Query
+
+**Type:** parameter
+
+Query parameter building block for retrieving log records related to a processing activity.
+
+### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range` — Logboek Extensie Lezen Time Range Query
+
+**Type:** parameter
+
+Query parameter building block for retrieving log records within a start and end time interval.
+
 ### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id` — Logboek Extensie Lezen Trace ID Query
 
 **Type:** parameter
@@ -26,23 +38,11 @@ Query parameter building block for retrieving log records by trace identifier.
 
 Problem response schema for errors returned by the Logboek Extensie Lezen API.
 
-### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id` — Logboek Extensie Lezen Processing Activity ID Query
-
-**Type:** parameter
-
-Query parameter building block for retrieving log records related to a processing activity.
-
 ### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id` — Logboek Extensie Lezen Data Subject ID Query
 
 **Type:** parameter
 
 Query parameter building block for retrieving log records related to a data subject.
-
-### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range` — Logboek Extensie Lezen Time Range Query
-
-**Type:** parameter
-
-Query parameter building block for retrieving log records within a start and end time interval.
 
 ### `geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record` — Logboek Log Record
 
@@ -73,6 +73,10 @@ OTLP JSON trace shape used to record OGC API Processes provenance.
 **Type:** model
 
 target Prov-o schema for LDV
+
+### `geonovum.examples.model-20260925-065242` — DCAT-AP-NL 3.0
+
+**Type:** model
 
 ### `geonovum.examples.ogcapi.processes.schemas.localoutlier.outputSchema` — Localoutlier process output schema
 

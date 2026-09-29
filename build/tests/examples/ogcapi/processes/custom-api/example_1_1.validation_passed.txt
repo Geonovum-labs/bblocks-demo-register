@@ -1,0 +1,7 @@
+Validation report for geonovum.examples.ogcapi.processes.custom-api - Demo OGC API processes instance - LOF
+Generated 2026-09-29T11:47:07.769676+00:00
+=== Files ===
+Using examples/metadata.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+

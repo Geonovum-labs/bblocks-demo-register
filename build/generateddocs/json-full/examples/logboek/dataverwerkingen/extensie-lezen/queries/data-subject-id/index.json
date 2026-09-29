@@ -22,6 +22,9 @@
     "Extensie Lezen"
   ],
   "shaclShapes": {},
+  "license": {
+    "url": "https://geonovum-labs.github.io/bblocks-demo-register/LICENSE"
+  },
   "dateOfLastChange": "2026-07-09",
   "schema": {
     "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/logboek/dataverwerkingen/extensie-lezen/queries/data-subject-id/schema.yaml",

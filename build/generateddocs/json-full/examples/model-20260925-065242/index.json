@@ -1,0 +1,40 @@
+
+
+{
+  "itemIdentifier": "geonovum.examples.model-20260925-065242",
+  "name": "DCAT-AP-NL 3.0",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-04T18:12:52Z",
+  "itemClass": "model",
+  "version": "0.1",
+  "shaclShapes": {
+    "geonovum.examples.model-20260925-065242": [
+      "https://geonovum-labs.github.io/bblocks-demo-register/_sources/model-20260925-065242/shapes.shacl"
+    ]
+  },
+  "resources": [
+    {
+      "role": "vocabulary",
+      "ref": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/model-20260925-065242/vocabulary.ttl",
+      "format": "text/turtle",
+      "title": "Supporting vocabulary"
+    }
+  ],
+  "shaclClosures": [
+    "vocabulary.ttl"
+  ],
+  "seeAlso": [
+    "https://semiceu.github.io/DCAT-AP/releases/3.0.1#"
+  ],
+  "license": {
+    "url": "https://geonovum-labs.github.io/bblocks-demo-register/LICENSE"
+  },
+  "dateOfLastChange": "2026-09-04",
+  "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/model-20260925-065242/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/Geonovum-labs/bblocks-demo-register/blob/master/build/tests/examples/model-20260925-065242/",
+  "description": "# DCAT-AP-NL 3.0\n\n## Profiles\n\nThis building block profiles:\n\n- <https://semiceu.github.io/DCAT-AP/releases/3.0.1#>\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/Geonovum-labs/bblocks-demo-register",
+  "gitPath": "_sources/model-20260925-065242"
+}

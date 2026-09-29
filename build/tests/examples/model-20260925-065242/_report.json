@@ -1,0 +1,37 @@
+{
+  "title": "Validation report for geonovum.examples.model-20260925-065242 - DCAT-AP-NL 3.0",
+  "bblockName": "DCAT-AP-NL 3.0",
+  "bblockId": "geonovum.examples.model-20260925-065242",
+  "generated": "2026-09-29T11:47:06.903647+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": false,
+        "filename": "_sources/model-20260925-065242/tests/example.ttl",
+        "url": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/model-20260925-065242/tests/example.ttl",
+        "language": "ttl"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example.ttl from test resources"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0
+  }
+}

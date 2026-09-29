@@ -30,6 +30,9 @@
     }
   ],
   "shaclShapes": {},
+  "license": {
+    "url": "https://geonovum-labs.github.io/bblocks-demo-register/LICENSE"
+  },
   "dateOfLastChange": "2026-08-28",
   "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/opentelemetry/rml-2-prov-o/",
   "validationPassed": true,

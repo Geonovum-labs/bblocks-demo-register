@@ -1,0 +1,6 @@
+Validation report for geonovum.examples.model-20260925-065242 - DCAT-AP-NL 3.0
+Generated 2026-09-29T11:47:06.903504+00:00
+=== Files ===
+Using example.ttl from test resources
+=== End Files ===
+

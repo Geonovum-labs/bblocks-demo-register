@@ -20,12 +20,12 @@
     }
   ],
   "dependsOn": [
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.trace-id",
     "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.problem-response",
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.processing-activity-id",
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id",
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.time-range",
-    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.schemas.log-record-collection"
+    "geonovum.examples.logboek.dataverwerkingen.extensie-lezen.queries.data-subject-id"
   ],
   "tags": [
     "LDV",
@@ -34,6 +34,9 @@
     "Extensie Lezen"
   ],
   "shaclShapes": {},
+  "license": {
+    "url": "https://geonovum-labs.github.io/bblocks-demo-register/LICENSE"
+  },
   "dateOfLastChange": "2026-07-09",
   "sourceFiles": "https://geonovum-labs.github.io/bblocks-demo-register/_sources/logboek/dataverwerkingen/extensie-lezen/api/",
   "validationPassed": true,

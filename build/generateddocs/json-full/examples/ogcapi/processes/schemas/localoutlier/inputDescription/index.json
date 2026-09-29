@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-03",
+  "dateOfLastChange": "2026-09-29",
   "maturity": "development",
   "tags": [
     "examples",
@@ -21,6 +21,9 @@
     "ogc.api.processes.v1.schemas.inputDescription",
     "geonovum.examples.ogcapi.processes.schemas.localoutlier.inputSchema"
   ],
+  "license": {
+    "url": "https://geonovum-labs.github.io/bblocks-demo-register/LICENSE"
+  },
   "schema": {
     "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.yaml",
     "application/json": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/ogcapi/processes/schemas/localoutlier/inputDescription/schema.json"

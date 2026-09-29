@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "bblocks-demo-register",
   "version": "0.8",
-  "dateOfLastChange": "2026-09-03",
+  "dateOfLastChange": "2026-09-29",
   "maturity": "development",
   "scope": "development",
   "tags": [
@@ -20,6 +20,9 @@
   ],
   "highlighted": false,
   "shaclShapes": {},
+  "license": {
+    "url": "https://geonovum-labs.github.io/bblocks-demo-register/LICENSE"
+  },
   "ldContext": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/context.jsonld",
   "schema": {
     "application/yaml": "https://geonovum-labs.github.io/bblocks-demo-register/build/annotated/examples/bag/schema/schema.yaml",
